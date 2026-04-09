@@ -1,0 +1,31 @@
+{
+	"name": "Airlinefiles",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "onpremfile",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"fileparam": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": {
+					"value": "@dataset().fileparam",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,21 @@
+{
+	"name": "lastmodifieddatejson",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADFstorageaccount",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "lastload.json",
+				"folderPath": "Monitor/incremental",
+				"fileSystem": "bronze"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,9 @@
+{
+	"name": "ADFProjectDatafactoryproject",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "753256ca-7e85-49a1-a2c9-b0f2ee5b6391",
+		"tenantId": "32d4e591-f00c-423c-b643-cff9f683cee7"
+	}
+}
